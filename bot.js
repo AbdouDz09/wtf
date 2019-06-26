@@ -46,5 +46,7 @@ const YossiF = member.guild.channels.get("588834994433294349");//ايدي الش
 if(!YossiF) return;
 if(YossiF) {
 YossiF.send(**..Welcome To  Dream..*`);
-}
+
 });
+
+client.login(process.env.BOT_TOKEN);
