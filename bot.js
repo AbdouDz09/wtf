@@ -433,4 +433,4 @@ ch.setUserLimit(15)
  }
 }
 })//Baron#1500
-client.login(process.env.BOT_TOKEN);
+Baron.login('NTIxMDI2NzM3NTMwODYzNjI2.XRMsCA.EKAordS4jVYiUF81_3s2B3N44VE');
