@@ -45,7 +45,7 @@ client.on('guildMemberAdd', member => {
 const YossiF = member.guild.channels.get("588834994433294349");//ايدي الشات
 if(!YossiF) return;
 if(YossiF) {
-YossiF.send(**..Welcome To  Dream..*`);
+YossiF.send('**..Welcome To  Dream..*`);
 
 });
 
