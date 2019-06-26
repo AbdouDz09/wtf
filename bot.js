@@ -6,41 +6,41 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
 	
 }); 
-const developers = ["461468630773661699"]
-const adminprefix = "7";
-
+const prefix = "$"
+var adminprefix = '$$'
 client.on('message', message => {
-  var argresult = message.content.split(` `).slice(1).join(' ');
-    if (!devs.includes(message.author.id)) return;
-	
-     if (message.content.startsWith(adminprefix + 'setg')) {
-    client.user.setGame(argresult);
-      message.channel.send(`**✅   ${argresult}**`)
-  } else
-  if (message.content.startsWith(adminprefix + 'setw')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});//Toxic Codes
-      message.channel.send(`**✅   ${argresult}**`)//Toxic Codes
-  } else
-  if (message.content.startsWith(adminprefix + 'setl')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**✅   ${argresult}**`)//Toxic Codes
-  } else
-     
-  if (message.content.startsWith(adminprefix + 'setname')) {
-client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
-return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
-} else
-  if (message.content.startsWith(adminprefix + 'setavatar')) {
-client.user.setAvatar(argresult);
-  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
-      } else
-	if (message.content.startsWith(adminprefix + 'sett')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/abdoufersaoui_dz");
-    message.channel.sendMessage(`تم تغيير تويتش البوت إلى  ${argresult}`)
-	}
-});
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id !== '461468630773661699') return;
 
+if (message.content.startsWith(prefix + 'g')) {
+  client.user.setGame(argresult);
+    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+} else 
+
+if (message.content.startsWith(prefix + 'w')) {
+client.user.setActivity(argresult, {type:'WATCHING'});
+    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+} else 
+if (message.content.startsWith(prefix + 'l')) {
+client.user.setActivity(argresult, {type:'LISTENING'});
+    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+} else 
+
+if (message.content.startsWith(prefix + 's')) {
+  client.user.setGame(argresult, "https://www.twitch.tv/Justin-Ly0001%22);
+    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+}
+  if (message.content.startsWith(adminprefix + 'setname')) {
+  client.user.setUsername(argresult).then
+      message.channel.send(Changing The Name To ..${argresult})
+} else
+if (message.content.startsWith(adminprefix + 'setava')) {
+  client.user.setAvatar(argresult);
+    message.channel.send(Changing The Avatar To :${argresult});
+  }
+});
 
 
 client.login(process.env.BOT_TOKEN);
