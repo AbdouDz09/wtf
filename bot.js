@@ -38,7 +38,7 @@ client.user.setAvatar(argresult);
 	if (message.content.startsWith(adminprefix + 'sett')) {
   client.user.setGame(argresult, "https://www.twitch.tv/abdoufersaoui_dz");
     message.channel.sendMessage(`تم تغيير تويتش البوت إلى  ${argresult}`)
-	
+	}
 });
 
 client.on('guildMemberAdd', member => {
