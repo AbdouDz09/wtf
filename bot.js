@@ -16,29 +16,29 @@ client.on('message', message => {
 
 if (message.content.startsWith(prefix + 'g')) {
   client.user.setGame(argresult);
-    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+      message.channel.send(Status You ${argresult} )
 } else 
 
 if (message.content.startsWith(prefix + 'w')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
-    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+      message.channel.send(Status You ${argresult} )
 } else 
 if (message.content.startsWith(prefix + 'l')) {
 client.user.setActivity(argresult, {type:'LISTENING'});
-    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+      message.channel.send(Status You ${argresult} )
 } else 
 
 if (message.content.startsWith(prefix + 's')) {
   client.user.setGame(argresult, "https://www.twitch.tv/Justin-Ly0001%22);
-    message.channel.sendMessage(:white_check_mark:  : ${argresult})
+      message.channel.send(Status You ${argresult} )
 }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.send(Changing The Name To ..${argresult})
+      message.channel.send(Status You ${argresult} )
 } else
 if (message.content.startsWith(adminprefix + 'setava')) {
   client.user.setAvatar(argresult);
-    message.channel.send(Changing The Avatar To :${argresult});
+      message.channel.send(Status You ${argresult} )
   }
 });
 
