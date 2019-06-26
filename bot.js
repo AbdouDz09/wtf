@@ -1,12 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log('Hi ${client.user.tag} , This Code by : YossiF');
-  console.log('')
-  console.log('i Have  [ " ${client.guilds.size} " ]');
-});
 
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag} !`);
+	
+}); 
 const developers = ["461468630773661699"]
 const adminprefix = "A.";
 client.on('message', message => {
